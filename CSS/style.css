@@ -1,0 +1,578 @@
+/* 
+  LUZ EM CIMA
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3),
+  -10px -10px 10px rgba(67, 67, 67, 0.5),
+  
+
+  inset -5px -10px 10px  rgba(67, 67, 67, 0.5),
+
+  inset -3px 10px 10px rgba(0, 0, 0, 0.5),
+  inset 10px -5px 10px rgba(0, 0, 0, 0.5),
+  
+  inset -10px 5px 10px rgba(67, 67, 67, 0.5),
+
+  5px 10px 10px rgba(0, 0, 0, 0.5),
+  8px 10px 10px rgba(61, 61, 61, 0.5);
+
+  ----------------------------------------------------------
+  EM CIMA MAIS PERTO
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3),
+  -15px -15px 10px rgba(67, 67, 67, 0.5),
+  
+
+  inset -5px -10px 10px  rgba(67, 67, 67, 0.5),
+
+  inset -3px 7px 10px rgba(0, 0, 0, 0.5),
+  inset 10px -5px 10px rgba(0, 0, 0, 0.5),
+  
+  inset -10px 5px 10px rgba(67, 67, 67, 0.5),
+
+  5px 7px 10px rgba(0, 0, 0, 0.5),
+  8px 10px 10px rgba(61, 61, 61, 0.5);
+  -------------------------------------------------
+
+  LUZ MEIO
+  box-shadow: 10px -5px 10px rgba(0, 0, 0, 0.3),
+  -10px -5px 10px rgba(67, 67, 67, 0.3),
+  
+
+  inset -5px -10px 10px  rgba(67, 67, 67, 0.5),
+
+  inset -3px 5px 10px rgba(67, 67, 67, 0.5),
+  inset 10px -5px 10px rgba(0, 0, 0, 0.5),
+  
+  inset -10px 5px 10px rgba(67, 67, 67, 0.5),
+
+  5px 10px 10px rgba(0, 0, 0, 0.5),
+  8px -10px 10px rgba(0, 0, 0, 0.5);
+  -----------------------------------------------
+  
+  BAIXO MAIS PERTO
+
+  box-shadow: -2px -15px 10px rgba(0, 0, 0, 0.5),
+  -15px -8px 10px rgba(67, 67, 67, 0.5),
+  
+
+  inset 10px -5px 10px  rgba(0, 0, 0, 0.5),
+
+  inset 10px 10px 10px rgba(67, 67, 67, 0.3),
+  inset 10px -5px 10px rgba(0, 0, 0, 0.3),
+  
+  inset -10px 5px 10px rgba(67, 67, 67, 0.3),
+
+  0px 15px 10px rgba(88, 88, 88, 0.3),
+  15px -5px 10px rgba(0, 0, 0, 0.5);
+
+  ----------------------------------------------
+  LUZ EM BAIXO
+  box-shadow: -2px -8px 10px rgba(0, 0, 0, 0.5),
+  -10px -8px 10px rgba(67, 67, 67, 0.5),
+  
+
+  inset 10px -5px 10px  rgba(0, 0, 0, 0.5),
+
+  inset 10px 5px 10px rgba(67, 67, 67, 0.3),
+  inset 10px -5px 10px rgba(0, 0, 0, 0.3),
+  
+  inset -10px 5px 10px rgba(67, 67, 67, 0.3),
+
+  0px 5px 10px rgba(88, 88, 88, 0.3),
+  10px -5px 10px rgba(0, 0, 0, 0.3);
+  ----------------------------------------
+
+  */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+ ::-webkit-scrollbar {
+    width: 5px;
+    background-color: #919191;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #282828;
+}
+
+
+/* lampada **************************************/
+
+.divLamp {
+    height: 300px;
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.5s;
+}
+
+.lampOff {
+    transform: translateY(-350px);
+}
+
+.lamp {
+    height: 110px;
+    width: 110px;
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.79));
+    transition: all 2s;
+}
+
+.lampOn {
+    filter: drop-shadow(0px 15px 15px rgba(255, 245, 156, 0.79));
+}
+
+.thread {
+    position: absolute;
+    background-color: #ffffff;
+    width: 4px;
+    height: 200px;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+}
+
+
+/**************************************************/
+
+.container_interruptor {
+    position: fixed;
+    right: 20px;
+    top: 485px;
+    border: solid 1px #7e7e7e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 80px;
+    transition: all 0.5s;
+}
+
+.interruptorOff {
+    transform: translateX(200px);
+}
+
+.interruptor {
+    background-color: rgb(202, 202, 202);
+    height: 78px;
+    width: 50px;
+}
+
+.tecla1 {
+    margin-left: 4.5px;
+    width: 50px;
+    height: 19.5px;
+    background-color: rgb(224, 224, 224);
+    transform: skewX(25deg);
+}
+
+.tecla2 {
+    margin-left: 4.5px;
+    width: 50px;
+    height: 19.5px;
+    background-color: rgb(82, 82, 82);
+    transform: skewX(-25deg);
+}
+
+.tecla_anime {
+    margin-top: 39px;
+}
+
+.area_evento {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+/***********************************************************************/
+
+body {
+    background-color: #282828;
+    padding: 35px;
+}
+
+.conhecimento {
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    height: 200px;
+    width: 1000px;
+    border-radius: 40px;
+    transition: all .6s;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shadow_conhecimento {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3), -10px -10px 10px rgba(67, 67, 67, 0.5), inset -5px -10px 10px rgba(67, 67, 67, 0.5), inset -3px 10px 10px rgba(0, 0, 0, 0.5), inset 10px -5px 10px rgba(0, 0, 0, 0.5), inset -10px 5px 10px rgba(67, 67, 67, 0.5), 5px 10px 10px rgba(0, 0, 0, 0.5), 8px 10px 10px rgba(61, 61, 61, 0.5);
+}
+
+.item {
+    position: relative;
+    height: 140px;
+    width: 120px;
+    border-radius: 20px;
+    transition: all .6s;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.shadow_item {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3), -10px -10px 10px rgba(67, 67, 67, 0.5), inset -5px -10px 10px rgba(67, 67, 67, 0.5), inset -3px 10px 10px rgba(0, 0, 0, 0.5), inset 10px -5px 10px rgba(0, 0, 0, 0.5), inset -10px 5px 10px rgba(67, 67, 67, 0.5), 5px 10px 10px rgba(0, 0, 0, 0.5), 8px 10px 10px rgba(61, 61, 61, 0.5);
+}
+
+.item>img {
+    transition: all .3s;
+    max-width: 70px;
+    max-height: 90px;
+    width: auto;
+    height: auto;
+}
+
+.item:hover {
+    transition: all 0.4s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0), -10px -10px 10px rgba(67, 67, 67, 0.5), inset -5px -10px 10px rgba(67, 67, 67, 0), inset -3px 10px 10px rgba(0, 0, 0, 0), inset 10px -5px 10px rgba(0, 0, 0, 0), inset -10px 5px 10px rgba(67, 67, 67, 0), 5px 10px 10px rgba(0, 0, 0, 0.5), 8px 10px 10px rgba(61, 61, 61, 0.5);
+    background: linear-gradient(315deg, #2e2e2e, #242424);
+}
+
+.item:hover img {
+    max-width: 75px;
+    max-height: 95px;
+    width: auto;
+    height: auto;
+}
+
+.item_hover {
+    transition: all 0.4s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0), -10px -10px 10px rgba(67, 67, 67, 0.5), inset -5px -10px 10px rgba(67, 67, 67, 0), inset -3px 10px 10px rgba(0, 0, 0, 0), inset 10px -5px 10px rgba(0, 0, 0, 0), inset -10px 5px 10px rgba(67, 67, 67, 0), 5px 10px 10px rgba(0, 0, 0, 0.5), 8px 10px 10px rgba(61, 61, 61, 0.5);
+    background: linear-gradient(315deg, #2e2e2e, #242424);
+}
+
+.item_hover_img {
+    width: 80px;
+    height: 100px;
+}
+
+
+/*INFO_CONHECIMENTO*************************************************************************/
+
+@keyframes anime_back {
+    from {
+        transform: translateX(-50px);
+    }
+}
+
+.back_anime {
+    animation: anime_back 15s ease-in-out infinite alternate;
+    background-image: url('../img/wallpaper2you_309602.png');
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    opacity: 0;
+}
+
+.opacy0-1 {
+    opacity: 0.1;
+}
+
+.container_main {
+    position: relative;
+    height: 350px;
+    width: 950px;
+    background-color: #282828;
+    z-index: 1;
+    border-radius: 40px;
+    transition: all .6s;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    overflow: hidden;
+    margin: auto;
+}
+
+.container_slide {
+    display: flex;
+    width: 800%;
+}
+
+.info_conhecimento {
+    height: 350px;
+    width: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_conhecimento p {
+    font-family: 'Raleway', sans-serif;
+    padding: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    font-weight: bolder;
+    text-shadow: 3px -2px rgb(0, 0, 0);
+}
+
+.transition {
+    transition: all 1s;
+}
+
+.nope {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+
+
+/*DANILO/////////////////////////////////////////////////////*/
+
+.job {
+    height: 300px;
+    width: 800px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    transition: 1s;
+    transform: translateY(300px);
+    opacity: 0;
+}
+
+.job_anime {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.danilo img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+.info_danilo {
+    width: 400px;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@keyframes neon {
+    from {
+        border: solid 10px #1d1fa1d2;
+        box-shadow: 0px 0px 20px #1d1fa19c, 0px 0px 20px #1d1fa1b2 inset
+    }
+}
+
+.aldus {
+    animation: neon 2s ease-in-out infinite alternate;
+    height: 500px;
+    width: 950px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 70px;
+    border: solid 10px #4557ff;
+    box-shadow: 0px 0px 40px #3143e6, 0px 0px 40px #3143e6 inset
+}
+
+.logo_aldus {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_aldus img {
+    max-width: 200px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    filter: drop-shadow(-2px -1px 10px #3143e6);
+}
+
+.logo_aldus button {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: -3px 3px 10px #3143e6;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.logo_aldus button:hover {
+    box-shadow: none;
+}
+
+.info_aldus {
+    padding: 10px;
+    width: 500px;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px -2px rgb(0, 0, 0);
+    border-radius: 40px;
+}
+
+.container_screen {
+    height: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato {
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    border-radius: 40px;
+    
+   
+}
+.contato div {
+    cursor: pointer;
+    width: 800px;
+    height: 133.33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.contato div:hover{
+    border-radius: 40px;
+    transition: 1s;
+    background-color: #919191be;
+}
+
+.contato div:hover img{
+    transition: all 0.4s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.contato div img{
+    cursor: pointer;
+    max-height: 80px;
+    max-width: 80px;
+    height: auto;
+    width: auto;
+}
+
+
+
+.email {
+    position: relative;
+    
+    
+}
+
+/*Botao email////////////////////////*/
+
+#copy{
+    cursor: pointer;
+    position: absolute;
+    background-color: rgb(34, 34, 163, 0);
+    height: 100%;
+    width: 100%;
+    border: none;
+    z-index: 5;
+}
+
+.email_input{
+    position: absolute;
+    opacity: 0;
+    animation: anime_back 15s ease-in-out infinite alternate;
+}
+@keyframes msg_email_anime{
+    0% {
+        transition: 0.5;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}
+
+.msg_email_animate {
+    animation: msg_email_anime 4s;
+}
+
+.msg{
+    transition: 0.5;
+    transform: translateY(20px);
+    opacity: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff9d;
+    width: 400px;
+}
+
+
+
+.screen_no{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #242424;
+    display: none;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+    
+}
+
+@media(max-width : 1000px) {
+    .screen_no{
+         display:flex;
+         align-items: center;
+         justify-content: center;
+         z-index: 100;
+    }
+
+    .screen_no div{
+        margin: auto;
+    }
+
+    .screen_no div p {
+        margin: auto;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    .screen_no div img{
+        
+        max-height: 200px;
+        height: auto;
+        margin: auto;
+    }
+
+    .img_screen{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
