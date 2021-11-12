@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="recursos/dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="recursos/style/main.css">
+    <link rel="stylesheet" href="recursos/style/mediaQ.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="recursos/style/jquery.js"></script>
+    <title>Aldus</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <header class="header">
+            <div class="divlogo">
+                <img class="logoheader" src="../img/logo-header.png" alt="">
+                <h1 class="h1">Soluções ao Seu Alcance</h1>
+            </div>
+
+            <div class="navMenu">
+
+                <ul class="menu">
+                    <li>Inicio</li>
+                    <li>Sobre Nós</li>
+                    <li>Clientes</li>
+                    <li>Parceiros</li>
+                    <li class='header_suporte'> <img class="img_header_suporte" src="../img/suporte.png" alt=""> </li>
+                </ul>
+            </div>
+
+            <button class="hamburger hamburger--collapse " type="button" aria-expanded="false">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+
+            </div>
+        </header>
+        <div class="click_close"></div>
+        <div class="suporte">
+            <div class="remoto">
+                <img src="../img/pc.png" alt="">
+                <div class="info">
+                    <p>Acesse o suporte remoto rapidamente</p>
+                    <button class='botao_su'>Suporte Aldus</button>
+                    <button class='botao_su'>Suporte Alternativo</button>
+                </div>
+            </div>
+
+            <div class="xml">
+                <img src="../img/xml.png" alt="">
+                <div class="info">
+                    <p>Consulta de nota fisca eletronica</p>
+                    <button class='botao_su'>Download XML Nfe</button>
+                </div>
+            </div>
+
+            <div class="suporte_number">
+                <img src="../img/suporte-tecnico.png" alt="">
+                <div class="info">
+                    <p>Mais informações fale conosco</p>
+                    <button class='botao_su'>Suporte</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="click_suporte">
+            <img src="../img/suporte.png" alt="">
+        </div>
+
+        <div id='principal'>
+
+        </div>
+
+
+
+        <div id='secundario'>
+
+            <h2>Por que Aldus Sistemas?</h2>
+
+            <div class='text1'>
+
+                <p> <img src="../img/check.png" alt=""> Desenvolvimento e implantação desde 2001</p>
+                <p> <img src="../img/check.png"> Fácil utilização</p>
+                <p> <img src="../img/check.png" alt="">Atendendo todas necessidades do mercado</p>
+                <p> <img src="../img/check.png" alt="">Comércio e indústrias de pequeno a grande porte</p>
+                <p> <img src="../img/check.png" alt="">Controle fiscal completo e atualizado</p>
+            </div>
+            <ul>
+
+                <li class='anime1'><img src="../img/cliente.png">
+                    <p>+1k</p>
+                    <p>Clientes</p>
+
+                </li>
+                <li class='anime2'><img src="../img/business.png">
+                    <p>20 anos </p>
+                    <p>de história</p>
+
+                </li>
+                <li class='anime3'><img src="../img/local.png">
+                    <p>Atendimento a </p>
+                    <p>todo o Sul</p>
+                </li>
+
+            </ul>
+
+
+        </div>
+        <img class='whats' src="../img/whats.png" alt="">
+
+
+        <!-- ------------ Scren Whats ------------------ -->
+        <div class="container">
+            <div class="header_whats">
+
+                <div class="container_profile">
+                    <div class="profile">
+                        <img src="../img/logo.png" alt="">
+                        <div class="transparent">
+                            <div class="online"></div>
+                        </div>
+                    </div>
+                    <div class="container_name">
+                        <p class="name_chat">Aldus</p>
+                        <p class="name_online">online</p>
+                    </div>
+                </div>
+
+
+                <button class="close" type="button">X</button>
+
+            </div>
+
+
+            <div class="mensseger1">
+                <p>Olá, tudo bem?</p>
+            </div>
+
+
+
+            <div class="mensseger2">
+                <p>Estamos a disposição para atendê-lo!</p>
+                <p>Nos envie uma mensagem pelo <a href=""></a>WhatsApp</p>
+            </div>
+
+            <div class="pontos">
+                <div class="contido">
+                    <div class="ponto1 circle"></div>
+                </div>
+
+                <div class="contido">
+                    <div class="ponto2 circle"></div>
+                </div>
+
+                <div class="contido">
+                    <div class="ponto3 circle"></div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <!-- ------------ Scren Whats ------------------ -->
+
+
+
+        <!-- ------------ Sistemas ------------------ -->
+        <div class="sys">
+            <div class="sistemas">
+                <li class="system1" onmouseenter="system1()" onmouseout="sair1()">
+                    <p>Genio</p>
+                </li>
+                <li class="system2" onmouseenter="system2()" onmouseout="sair2()">
+                    <p>GenioMob</p>
+                </li>
+                <li class="system3" onmouseenter="system3()" onmouseout="sair3()">
+                    <p>GenioPaf</p>
+                </li>
+                <div id="infoSystem">
+                    <div class="imgsystem"><img class='img' src="../img/genio.png" alt=""></div>
+                    <h3>Sistemas</h3>
+                    <p class="systemText">O sistema de gestão empresarial Gênio foi desenvolvimento com base nas
+                        necessidades e propostas de nossos clientes. Ele atende os mais variados segmentos empresariais, e
+                        proporciona o controle total de sua empresa, desde rotinas operacionais – realizadas no dia-a-dia,
+                        até a geração de relatórios de desempenho e apuração de resultados. </p>
+                </div>
+            </div>
+        </div>
+        <div id='distancia'>
+            <p class='missao'>
+                "Desenvolvemos e fornecemos soluções especializadas para diversos ramos de atividade, que proporcionem melhoria da qualidade, produtividade, lucratividade, competitividade e crescimento de nossos clientes"</p>
+
+            <div class="center">
+                <div class="missaoimg"><img src="../img/pexels-fauxels-3184405.jpg" alt=""> </div>
+            </div>
+        </div>
+    </nav>
+    <footer>
+        <div class='logo3'>
+            <img src="../img/logo.png" alt="">
+            <p>Aldus Sistemas</p>
+        </div>
+        <address>
+            <div>
+                <p>Av. Nereu Ramos, 1375</p>
+                <p>Sala 101, 1° Andar. Bairro Centro</p>
+                <p>Sombrio / SC</p>
+                <p>(48) 3533-3899</p>
+                <p>(48) 98411-0717.</p>
+            </div>
+        </address>
+        <div class="location"></div>
+        <p class="copy">&copy;AldusSistemas</p>
+    </footer>
+    <script src="recursos/style/script.js"></script>
+</body>
+
+</html>

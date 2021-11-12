@@ -1,0 +1,354 @@
+@media (max-width: 1070px) {
+    .h1principal{
+         
+         font-size: 80px;
+         text-align: center;
+     }
+}
+@media (max-width: 700px) {
+   
+    .header{
+        box-sizing: border-box;
+        height: 50px;
+    
+    }
+
+    .main{
+    width: 100%;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    .menu{
+        margin: 0;
+        display: block;
+        position: absolute;
+        width: 0;
+        top: 50px;
+        right: 0px;
+        height: 100vh;
+        z-index: 1000;
+        visibility: hidden;
+        transition: 0.3s;
+        background-color: rgb(78, 78, 78);
+        overflow-x: hidden;
+    }
+
+    .menu_anime{
+        color: #f0f0f0;
+    }
+
+    .menu li{
+       font-size: 1.5rem; 
+       padding: 10px 20px;
+    }
+
+   .navMenu.is-active .menu {
+        width: 80vw;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+
+    .logoheader_anime{
+        height: 45px;
+        width: 45px;
+       
+    }
+
+    #principal{
+        background-image: url(../img/-700px.jpg);
+    }
+    .aldus{
+        font-size: 50px;
+    }
+
+    .divaldus_anime{
+        height: 50px;
+        top: 0;
+        margin: 0;
+        left: 58%;
+        margin-left: -50px;
+        
+    }
+
+
+   .h1principal{
+       width: 200px;
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    /*secundario/////////////////*/
+    
+    #secundario{
+        background-image: none;
+        margin: auto;
+        height: auto;
+    }
+    .text1{
+    
+        margin: auto;
+        color: rgb(68, 68, 68);
+        width:  300px;
+        margin-top: 50px;
+    }
+    
+    
+    .text1 > p {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 10px 0vw;
+    }
+    
+    
+    .text1 > p >img{
+      height: 20px;
+      width:  20px;
+    }
+
+    #secundario > ul{
+        position: relative;
+       flex-direction: column;
+
+    }   
+
+    #secundario > ul > li{
+        margin-top: 20px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+
+   
+   /*sistemas/////////////////*/
+
+ 
+    .sistemas{
+       
+       position: relative;
+       margin: auto;
+       margin-top: 35px;
+       width: 320px;
+       height: 400px;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 50px auto;
+       margin-bottom: 300px;
+
+    }
+
+    .system3{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 5px;
+    }
+
+    .system2{
+        border-top: none;
+         border-bottom:none;
+         border-left:solid 2px #1d1d1d;
+         border-right: solid 2px #1d1d1d;
+    }
+
+    #infoSystem{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border-top-right-radius: 0px;
+        background: rgb(54,82,254);
+    background: linear-gradient(180deg, rgba(54,82,254,1) 0%, rgba(33,71,232,1) 15%, rgba(21,30,236,1) 62%);
+    
+    grid-template-rows: 60px  auto auto;
+    grid-template-columns: 320px;
+    box-sizing: border-box;
+   
+    }
+
+    .sistemas li > p{
+        font-size: 1rem;
+      
+    }
+  
+    h3{ 
+        font-size: 2.5rem;
+        color: #e0e0e0;
+       text-align: center;
+
+       grid-column-start:1 ;
+       grid-column-end: 2;
+    }
+    .imgsystem{
+     
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column-start:1 ;
+       grid-column-end: 3;
+       grid-row-start:3;
+       grid-row-end:4;
+     
+    }
+    
+    .imgsystem > img{
+        
+        height: 90px;
+        width: 150px;
+    }
+    
+    .systemText {
+    
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        font-size: 1rem;
+        box-sizing: border-box;
+        color: #e0e0e0;
+        grid-column-start:1 ;
+        grid-column-end: 1;
+        grid-row-start:2;
+        grid-row-end:3;
+        padding: 0 30px;
+        
+    }
+
+  /*sistemas/////////////////*/
+
+  .whats{
+      height: 40px;
+      width: 40px;
+  } 
+  /*Missao/////////////////*/
+
+  #distancia{
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+}
+
+.missao{
+    font-size: 1rem;
+    width: 300px;
+     margin: auto;
+     text-align: center;
+  
+}
+
+
+.missaoimg{
+   
+   position: relative;
+   height: 155px;
+    width: 308px;
+    z-index: 1;
+    background-color: #3652fe;
+    transform: rotate(-5deg);
+    border-radius: 28px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+
+
+.missaoimg > img{
+   
+    height: 150px;
+    width: 300px;
+   
+    transform: rotate(5deg);
+    border-radius: 28px;
+    margin: auto;
+}
+.center{
+    margin: 30px 0;
+    width: 100%;
+    height: 150px;
+    z-index: 10;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.missaoimg{
+       position: absolute;
+    }
+
+  /*/////////////////*/
+  
+
+    footer{
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-rows: auto  100px 50px ;
+         grid-template-columns: 1fr 1fr;
+        color: #e0e0e0;
+        font-family: 'Mulish', sans-serif;
+        bottom: 0;
+        height: 300px;
+        background-color: rgb(68, 68, 68);
+        position: sticky;
+        z-index:-1;
+        box-shadow:         inset 1px 28px 24px 0px rgba(50, 50, 50, 0.58);
+    }
+    
+    address{
+        display: flex;
+        font-size: .9rem;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .copy{
+        /*grid-column-start:2 ;
+        grid-column-end: 3;Começa na linha e termina na 4*/
+        grid-column-start: 1 ;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        font-size: .5rem;
+        box-sizing: border-box;
+        width:75% ;
+        margin: auto;
+        padding: 15px 0px;
+        border-top:solid 1px #2b2b2b;
+        font-size: 0.7rem;
+        
+    }
+    
+    .location{
+       height: 100px;
+       background-position:center ;
+    }
+    
+    .logo3{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .logo3 > img{
+     height: 80px;
+     width: 80px;
+    }
+    
+    .logo3 > p{
+        width: 60px;  
+    }
+    .container.active{
+        opacity: 1;
+        bottom: 10px;
+        right: 2px;
+    transition: 0.5s;
+    visibility: visible;
+    overflow-y: auto;   
+    } 
+    
+}
+
+
